@@ -76,6 +76,13 @@ section {
     text-align: center;
 }
 
+video{
+
+    width: 100%;
+    z-index: -100;
+   
+}
+
 h2 {
     font-family: var(--font-title);
     font-size: 3.5rem;
@@ -92,6 +99,7 @@ h2 {
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    z-index: 50;
 }
 
 #home .overlay {
