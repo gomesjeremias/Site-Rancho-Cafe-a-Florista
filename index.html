@@ -63,48 +63,127 @@
 
         <section id="menu">
             <h2>Nosso Cardápio</h2>
-            <div class="menu-container">
-                <div class="menu-item">
-                    <img src="./assets/cappuccino.png" alt="Café Espresso">
-                    <h3>Café com leite - Livre</h3>
-                    <p class="price">R$ 8,00</p>
-                </div>
-                <div class="menu-item">
-                    <img src="./assets/torta de morango com nata .jpeg" alt="Torta de Morango com Nata">
-                    <h3>Torta de Morango com Nata - Sem gluten</h3>
-                    <p class="price">R$ 90,00 kg</p>
-                </div>
-                <div class="menu-item">
-                    <img src="./assets/quiche de broclolis e bacon.jpeg" alt="Quiche de brócolos e bacon">
-                    <h3>Quiche de brócolis e bacon</h3>
-                    <p class="price">R$ 18,00</p>
-                </div>
-                <div class="menu-item">
-                    <img src="./assets/Empadinha de camarao.jpeg" alt="Empadinha de camarão">
-                    <h3>Croissant Francês</h3>
-                    <p class="price">R$ 12,00</p>
-                </div>
-                <div class="menu-item">
-                    <img src="./assets/torta dde pistache com uvas verdes.jpeg" alt="Torta de pistache">
-                    <h3>Torta de Pistache e uva verdes</h3>
-                    <p class="price">R$ 18,00</p>
-                </div>
-                <div class="menu-item">
-                    <img src="./assets/rocombole de amendoim .jpeg" alt="Rocombole de amendoim">
-                    <h3>Rocombole de amendoim - Sem gluten e sem lactose</h3>
-                    <p class="price">R$ 18,00</p>
-                </div>
-                <div class="menu-item">
-                    <img src="./assets/torta sensação morango e chocolate.jpeg" alt="Torta sensação">
-                    <h3>Torta sensação de musse de morango e cobertura de chocolate nobre</h3>
-                    <p class="price">R$ 18,00</p>
-                </div>
-                <div class="menu-item">
-                    <img src="./assets/torta de Geleia de morango.jpeg" alt="Torta Artesanal de Geleia de Morango">
-                    <h3>Torta Artesanal de Geleia de Morango</h3>
-                    <p class="price">R$ 18,00</p>
-                </div>
-            </div>
+           <div class="menu-container">
+  <div class="menu-item" data-item="cafe-com-leite">
+    <img src="./assets/cappuccino.png" alt="Café com leite - Livre">
+    <h3>Café com leite - Livre</h3>
+    <p class="price">R$ 8,00</p>
+  </div>
+
+  <div class="menu-item" data-item="torta-morango-nata">
+    <img src="./assets/torta de morango com nata .jpeg" alt="Torta de Morango com Nata">
+    <h3>Torta de Morango com Nata - Sem gluten</h3>
+    <p class="price">R$ 90,00 kg</p>
+  </div>
+
+  <div class="menu-item" data-item="quiche-brocolis-bacon">
+    <img src="./assets/quiche de broclolis e bacon.jpeg" alt="Quiche de brócolis e bacon">
+    <h3>Quiche de brócolis e bacon</h3>
+    <p class="price">R$ 18,00</p>
+  </div>
+
+  <div class="menu-item" data-item="empadinha-camarao">
+    <img src="./assets/Empadinha de camarao.jpeg" alt="Empadinha de camarão">
+    <h3>Empadinha de camarão</h3>
+    <p class="price">R$ 12,00</p>
+  </div>
+
+  <div class="menu-item" data-item="torta-pistache-uvas">
+    <img src="./assets/torta dde pistache com uvas verdes.jpeg" alt="Torta de pistache">
+    <h3>Torta de Pistache e uva verdes</h3>
+    <p class="price">R$ 18,00</p>
+  </div>
+
+  <div class="menu-item" data-item="rocambole-amendoim">
+    <img src="./assets/rocombole de amendoim .jpeg" alt="Rocombole de amendoim">
+    <h3>Rocombole de amendoim - Sem gluten e sem lactose</h3>
+    <p class="price">R$ 18,00</p>
+  </div>
+
+  <div class="menu-item" data-item="torta-sensacao">
+    <img src="./assets/torta sensação morango e chocolate.jpeg" alt="Torta sensação">
+    <h3>Torta sensação de musse de morango e cobertura de chocolate nobre</h3>
+    <p class="price">R$ 18,00</p>
+  </div>
+
+  <div class="menu-item" data-item="torta-geleia-morango">
+    <img src="./assets/torta de Geleia de morango.jpeg" alt="Torta Artesanal de Geleia de Morango">
+    <h3>Torta Artesanal de Geleia de Morango</h3>
+    <p class="price">R$ 18,00</p>
+  </div>
+</div>
+<!-- Modais -->
+<div id="modal-cafe-com-leite" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="cafe-com-leite">&times;</span>
+    <h2>Café com leite - Livre</h2>
+    <img src="./assets/cappuccino.png" alt="">
+    <p>Bebida tradicional com leite vaporizado. Sem restrições alimentares.</p>
+  </div>
+</div>
+
+<div id="modal-torta-morango-nata" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="torta-morango-nata">&times;</span>
+    <h2>Torta de Morango com Nata - Sem glúten</h2>
+    <img src="./assets/torta de morango com nata .jpeg" alt="">
+    <p>Deliciosa torta artesanal com morangos frescos e nata, livre de glúten.</p>
+  </div>
+</div>
+
+<div id="modal-quiche-brocolis-bacon" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="quiche-brocolis-bacon">&times;</span>
+    <h2>Quiche de brócolis e bacon</h2>
+    <img src="./assets/quiche de broclolis e bacon.jpeg" alt="">
+    <p>Combinação cremosa de brócolis e bacon em massa leve e crocante.</p>
+  </div>
+</div>
+
+<div id="modal-empadinha-camarao" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="empadinha-camarao">&times;</span>
+    <h2>Empadinha de camarão</h2>
+    <img src="./assets/Empadinha de camarao.jpeg" alt="">
+    <p>Recheio suculento de camarão temperado, massa amanteigada.</p>
+  </div>
+</div>
+
+<div id="modal-torta-pistache-uvas" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="torta-pistache-uvas">&times;</span>
+    <h2>Torta de Pistache e Uvas Verdes</h2>
+    <img src="./assets/torta dde pistache com uvas verdes.jpeg" alt="">
+    <p>Sabor refinado de pistache com a leveza das uvas verdes frescas.</p>
+  </div>
+</div>
+
+<div id="modal-rocambole-amendoim" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="rocambole-amendoim">&times;</span>
+    <h2>Rocombole de Amendoim - Sem glúten e sem lactose</h2>
+    <img src="./assets/rocombole de amendoim .jpeg" alt="">
+    <p>Delícia sem restrições, recheado com creme de amendoim.</p>
+  </div>
+</div>
+
+<div id="modal-torta-sensacao" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="torta-sensacao">&times;</span>
+    <h2>Torta Sensação</h2>
+    <img src="./assets/torta sensação morango e chocolate.jpeg" alt="">
+    <p>Camada de mousse de morango com cobertura de chocolate nobre.</p>
+  </div>
+</div>
+
+<div id="modal-torta-geleia-morango" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="torta-geleia-morango">&times;</span>
+    <h2>Torta Artesanal de Geleia de Morango</h2>
+    <img src="./assets/torta de Geleia de morango.jpeg" alt="">
+    <p>Massa leve com recheio de geleia artesanal feita com morangos frescos.</p>
+  </div>
+</div>
         </section>
 
         <section id="contact">

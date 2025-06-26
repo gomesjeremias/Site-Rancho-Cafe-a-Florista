@@ -1,7 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // This script could be used for more complex interactions in the future.
-    // For now, smooth scrolling is handled by CSS `scroll-behavior: smooth;`
-    // and navigation works with anchor links.
-    console.log("Bem-vindo ao site do Café Rosa!");
+document.querySelectorAll('.menu-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const key = item.getAttribute('data-item');
+    document.getElementById('modal-' + key).style.display = 'flex';
+  });
 });
 
+document.querySelectorAll('.close').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const key = btn.getAttribute('data-close');
+    document.getElementById('modal-' + key).style.display = 'none';
+  });
+});
+
+window.addEventListener('click', e => {
+  document.querySelectorAll('.modal').forEach(modal => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});
