@@ -1,213 +1,214 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rancho Café - A Florista</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rancho Café - A Florista</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <a href="#home" class="logo-link"><img src="./assets/Logo Cafeteria a florista.png" alt="Café Rosa Logo"
-                    class="logo"></a>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Quem Somos</a></li>
-                <li><a href="#menu">Cardápio</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo-link"><img src="./assets/Logo Cafeteria a florista.png" alt="Café Rosa Logo"
+          class="logo"></a>
 
-    <main>
+      <button class="hamburger" id="hamburger">&#9776;</button>
 
-        <section id="home">
-            <div class="overlay">
-                <div class="home-text">
-                    <h1>Rancho Café - A Florista</h1>
-                    <p class="paragrafo-frase">Flores que acolhem, sabores que encantam...</p>
-                    
-                </div>
-                
-                    <img class="foto-fundo" src="./assets/bg-foto de fundo.jpeg">
-                    
-            </div>
-            
-        </section>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Quem Somos</a></li>
+        <li><a href="#menu">Cardápio</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section id="about">
-            <h2>Quem Somos</h2>
-            <div class="about-content">
-                <p>Bem-vindo ao Rancho Café – A Florista, um refúgio acolhedor onde sabor, saúde e natureza se
-                    encontram. Aqui, acreditamos que o prazer de um bom café e de um doce especial não precisa vir
-                    acompanhado de restrições.
+  <main>
 
-                    Somos uma cafeteria artesanal, especializada em produtos sem glúten e sem lactose, pensada com
-                    carinho para quem busca uma alimentação mais leve, consciente ou com restrições alimentares – sem
-                    abrir mão do sabor.</p>
-                <p>Nosso espaço foi inspirado no charme do campo e na delicadeza das flores, criando um ambiente que
-                    convida à pausa, ao encontro e à reconexão com o natural. Cada detalhe do Rancho Café – A Florista
-                    foi pensado para proporcionar uma experiência única, da decoração à seleção de ingredientes.
+    <section id="home">
+      <img src="./assets/bg-foto de fundo.png" alt="Banner" class="home-bg">
+      <div class="overlay">
+        <div class="home-text">
+          <h1>Rancho Café - A Florista</h1>
+          <p class="paragrafo-frase">Flores que acolhem, sabores que encantam...</p>
 
-                    Aqui, tudo é feito com cuidado: dos cafés especiais aos bolos, pães e quitutes fresquinhos, todos
-                    livres de glúten e lactose, preparados com ingredientes selecionados e muito amor.
+        
 
-                    Seja para começar o dia com energia, fazer uma pausa no meio da tarde ou simplesmente desfrutar um
-                    momento especial, o Rancho Café – A Florista é o seu lugar.</p>
-                    <p>🌸 Sinta-se em casa. Sinta-se bem. Sinta o sabor do cuidado.</p>
-            </div>
-        </section>
+    </section>
 
-        <section id="menu">
-            <h2>Nosso Cardápio</h2>
-           <div class="menu-container">
-  <div class="menu-item" data-item="cafe-com-leite">
-    <img src="./assets/cappuccino.png" alt="Café com leite - Livre">
-    <h3>Café com leite - Livre</h3>
-    <p class="price">R$ 8,00</p>
-  </div>
+    <section id="about">
+      <h2>Quem Somos</h2>
+      <div class="about-content">
+        <p>Bem-vindo ao Rancho Café – A Florista, um refúgio acolhedor onde sabor, saúde e natureza se
+          encontram. Aqui, acreditamos que o prazer de um bom café e de um doce especial não precisa vir
+          acompanhado de restrições.
 
-  <div class="menu-item" data-item="torta-morango-nata">
-    <img src="./assets/torta de morango com nata .jpeg" alt="Torta de Morango com Nata">
-    <h3>Torta de Morango com Nata - Sem gluten</h3>
-    <p class="price">R$ 90,00 kg</p>
-  </div>
+          Somos uma cafeteria artesanal, especializada em produtos sem glúten e sem lactose, pensada com
+          carinho para quem busca uma alimentação mais leve, consciente ou com restrições alimentares – sem
+          abrir mão do sabor.</p>
+        <p>Nosso espaço foi inspirado no charme do campo e na delicadeza das flores, criando um ambiente que
+          convida à pausa, ao encontro e à reconexão com o natural. Cada detalhe do Rancho Café – A Florista
+          foi pensado para proporcionar uma experiência única, da decoração à seleção de ingredientes.
 
-  <div class="menu-item" data-item="quiche-brocolis-bacon">
-    <img src="./assets/quiche de broclolis e bacon.jpeg" alt="Quiche de brócolis e bacon">
-    <h3>Quiche de brócolis e bacon</h3>
-    <p class="price">R$ 18,00</p>
-  </div>
+          Aqui, tudo é feito com cuidado: dos cafés especiais aos bolos, pães e quitutes fresquinhos, todos
+          livres de glúten e lactose, preparados com ingredientes selecionados e muito amor.
 
-  <div class="menu-item" data-item="empadinha-camarao">
-    <img src="./assets/Empadinha de camarao.jpeg" alt="Empadinha de camarão">
-    <h3>Empadinha de camarão</h3>
-    <p class="price">R$ 12,00</p>
-  </div>
+          Seja para começar o dia com energia, fazer uma pausa no meio da tarde ou simplesmente desfrutar um
+          momento especial, o Rancho Café – A Florista é o seu lugar.</p>
+        <p>🌸 Sinta-se em casa. Sinta-se bem. Sinta o sabor do cuidado.</p>
+      </div>
+    </section>
 
-  <div class="menu-item" data-item="torta-pistache-uvas">
-    <img src="./assets/torta dde pistache com uvas verdes.jpeg" alt="Torta de pistache">
-    <h3>Torta de Pistache e uva verdes</h3>
-    <p class="price">R$ 18,00</p>
-  </div>
+    <section id="menu">
+      <h2>Nosso Cardápio</h2>
+      <div class="menu-container">
+        <div class="menu-item" data-item="cafe-com-leite">
+          <img src="./assets/cappuccino.png" alt="Café com leite - Livre">
+          <h3>Café com leite - Livre</h3>
+          <p class="price">R$ 8,00</p>
+        </div>
 
-  <div class="menu-item" data-item="rocambole-amendoim">
-    <img src="./assets/rocombole de amendoim .jpeg" alt="Rocombole de amendoim">
-    <h3>Rocombole de amendoim - Sem gluten e sem lactose</h3>
-    <p class="price">R$ 18,00</p>
-  </div>
+        <div class="menu-item" data-item="torta-morango-nata">
+          <img src="./assets/torta de morango com nata .jpeg" alt="Torta de Morango com Nata">
+          <h3>Torta de Morango com Nata - Sem gluten</h3>
+          <p class="price">R$ 90,00 kg</p>
+        </div>
 
-  <div class="menu-item" data-item="torta-sensacao">
-    <img src="./assets/torta sensação morango e chocolate.jpeg" alt="Torta sensação">
-    <h3>Torta sensação de musse de morango e cobertura de chocolate nobre</h3>
-    <p class="price">R$ 18,00</p>
-  </div>
+        <div class="menu-item" data-item="quiche-brocolis-bacon">
+          <img src="./assets/quiche de broclolis e bacon.jpeg" alt="Quiche de brócolis e bacon">
+          <h3>Quiche de brócolis e bacon</h3>
+          <p class="price">R$ 18,00</p>
+        </div>
 
-  <div class="menu-item" data-item="torta-geleia-morango">
-    <img src="./assets/torta de Geleia de morango.jpeg" alt="Torta Artesanal de Geleia de Morango">
-    <h3>Torta Artesanal de Geleia de Morango</h3>
-    <p class="price">R$ 18,00</p>
-  </div>
-</div>
-<!-- Modais -->
-<div id="modal-cafe-com-leite" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close="cafe-com-leite">&times;</span>
-    <h2>Café com leite - Livre</h2>
-    <img src="./assets/cappuccino.png" alt="">
-    <p>Bebida tradicional com leite vaporizado. Sem restrições alimentares.</p>
-  </div>
-</div>
+        <div class="menu-item" data-item="empadinha-camarao">
+          <img src="./assets/Empadinha de camarao.jpeg" alt="Empadinha de camarão">
+          <h3>Empadinha de camarão</h3>
+          <p class="price">R$ 12,00</p>
+        </div>
 
-<div id="modal-torta-morango-nata" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close="torta-morango-nata">&times;</span>
-    <h2>Torta de Morango com Nata - Sem glúten</h2>
-    <img src="./assets/torta de morango com nata .jpeg" alt="">
-    <p>Deliciosa torta artesanal com morangos frescos e nata, livre de glúten.</p>
-  </div>
-</div>
+        <div class="menu-item" data-item="torta-pistache-uvas">
+          <img src="./assets/torta de pistache com uvas verdes.jpeg" alt="Torta de pistache">
+          <h3>Torta de Pistache e uva verdes</h3>
+          <p class="price">R$ 18,00</p>
+        </div>
 
-<div id="modal-quiche-brocolis-bacon" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close="quiche-brocolis-bacon">&times;</span>
-    <h2>Quiche de brócolis e bacon</h2>
-    <img src="./assets/quiche de broclolis e bacon.jpeg" alt="">
-    <p>Combinação cremosa de brócolis e bacon em massa leve e crocante.</p>
-  </div>
-</div>
+        <div class="menu-item" data-item="rocambole-amendoim">
+          <img src="./assets/rocombole de amendoim .jpeg" alt="Rocombole de amendoim">
+          <h3>Rocombole de amendoim - Sem gluten e sem lactose</h3>
+          <p class="price">R$ 18,00</p>
+        </div>
 
-<div id="modal-empadinha-camarao" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close="empadinha-camarao">&times;</span>
-    <h2>Empadinha de camarão</h2>
-    <img src="./assets/Empadinha de camarao.jpeg" alt="">
-    <p>Recheio suculento de camarão temperado, massa amanteigada.</p>
-  </div>
-</div>
+        <div class="menu-item" data-item="torta-sensacao">
+          <img src="./assets/torta sensação morango e chocolate.jpeg" alt="Torta sensação">
+          <h3>Torta sensação de musse de morango e cobertura de chocolate nobre</h3>
+          <p class="price">R$ 18,00</p>
+        </div>
 
-<div id="modal-torta-pistache-uvas" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close="torta-pistache-uvas">&times;</span>
-    <h2>Torta de Pistache e Uvas Verdes</h2>
-    <img src="./assets/torta dde pistache com uvas verdes.jpeg" alt="">
-    <p>Sabor refinado de pistache com a leveza das uvas verdes frescas.</p>
-  </div>
-</div>
+        <div class="menu-item" data-item="torta-geleia-morango">
+          <img src="./assets/torta de Geleia de morango.jpeg" alt="Torta Artesanal de Geleia de Morango">
+          <h3>Torta Artesanal de Geleia de Morango</h3>
+          <p class="price">R$ 18,00</p>
+        </div>
+      </div>
+      <!-- Modais -->
+      <div id="modal-cafe-com-leite" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="cafe-com-leite">&times;</span>
+          <h2>Café com leite - Livre</h2>
+          <img src="./assets/cappuccino.png" alt="">
+          <p>Bebida tradicional com leite vaporizado. Sem restrições alimentares.</p>
+        </div>
+      </div>
 
-<div id="modal-rocambole-amendoim" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close="rocambole-amendoim">&times;</span>
-    <h2>Rocombole de Amendoim - Sem glúten e sem lactose</h2>
-    <img src="./assets/rocombole de amendoim .jpeg" alt="">
-    <p>Delícia sem restrições, recheado com creme de amendoim.</p>
-  </div>
-</div>
+      <div id="modal-torta-morango-nata" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="torta-morango-nata">&times;</span>
+          <h2>Torta de Morango com Nata - Sem glúten</h2>
+          <img src="./assets/torta de morango com nata .jpeg" alt="">
+          <p>Deliciosa torta artesanal com morangos frescos e nata, livre de glúten.</p>
+        </div>
+      </div>
 
-<div id="modal-torta-sensacao" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close="torta-sensacao">&times;</span>
-    <h2>Torta Sensação</h2>
-    <img src="./assets/torta sensação morango e chocolate.jpeg" alt="">
-    <p>Camada de mousse de morango com cobertura de chocolate nobre.</p>
-  </div>
-</div>
+      <div id="modal-quiche-brocolis-bacon" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="quiche-brocolis-bacon">&times;</span>
+          <h2>Quiche de brócolis e bacon</h2>
+          <img src="./assets/quiche de broclolis e bacon.jpeg" alt="">
+          <p>Combinação cremosa de brócolis e bacon em massa leve e crocante.</p>
+        </div>
+      </div>
 
-<div id="modal-torta-geleia-morango" class="modal">
-  <div class="modal-content">
-    <span class="close" data-close="torta-geleia-morango">&times;</span>
-    <h2>Torta Artesanal de Geleia de Morango</h2>
-    <img src="./assets/torta de Geleia de morango.jpeg" alt="">
-    <p>Massa leve com recheio de geleia artesanal feita com morangos frescos.</p>
-  </div>
-</div>
-        </section>
+      <div id="modal-empadinha-camarao" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="empadinha-camarao">&times;</span>
+          <h2>Empadinha de camarão</h2>
+          <img src="./assets/Empadinha de camarao.jpeg" alt="">
+          <p>Recheio suculento de camarão temperado, massa amanteigada.</p>
+        </div>
+      </div>
 
-        <section id="contact">
-            <h2>Contato</h2>
-            <div class="contact-info">
-                <p>Venha nos fazer uma visita!</p>
-                <p><strong>Endereço:</strong> Rua Mato Grosso, Centro, Barra Velha<br>Em frente ao estacionamento da Câmara de vereadores</p>
-                <p><strong>Telefone:</strong> (47) 8815-6371</p>
-                <p><strong>Horário:</strong> Segunda a Sábado, das 8h às 20h</p>
-            </div>
-        </section>
-    </main>
+      <div id="modal-torta-pistache-uvas" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="torta-pistache-uvas">&times;</span>
+          <h2>Torta de Pistache e Uvas Verdes</h2>
+          <img src="./assets/torta de pistache com uvas verdes.jpeg" alt="">
+          <p>Sabor refinado de pistache com a leveza das uvas verdes frescas.</p>
+        </div>
+      </div>
 
-    <footer>
-        <p>&copy; 2024 Rancho Café - A Florista. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Jeremias Gomes </p>
-    </footer>
+      <div id="modal-rocambole-amendoim" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="rocambole-amendoim">&times;</span>
+          <h2>Rocambole de Amendoim - Sem glúten e sem lactose</h2>
+          <img src="./assets/rocombole de amendoim .jpeg" alt="">
+          <p>Delícia sem restrições, recheado com creme de amendoim.</p>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <div id="modal-torta-sensacao" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="torta-sensacao">&times;</span>
+          <h2>Torta Sensação</h2>
+          <img src="./assets/torta sensação morango e chocolate.jpeg" alt="">
+          <p>Camada de mousse de morango com cobertura de chocolate nobre.</p>
+        </div>
+      </div>
+
+      <div id="modal-torta-geleia-morango" class="modal">
+        <div class="modal-content">
+          <span class="close" data-close="torta-geleia-morango">&times;</span>
+          <h2>Torta Artesanal de Geleia de Morango</h2>
+          <img src="./assets/torta de Geleia de morango.jpeg" alt="">
+          <p>Massa leve com recheio de geleia artesanal feita com morangos frescos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contato</h2>
+      <div class="contact-info">
+        <p>Venha nos fazer uma visita!</p>
+        <p><strong>Endereço:</strong> Rua Mato Grosso, Centro, Barra Velha<br>Em frente ao estacionamento da Câmara de
+          vereadores</p>
+        <p><strong>Telefone:</strong> (47) 8815-6371</p>
+        <p><strong>Horário:</strong> Segunda a Sábado, das 8h às 20h</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Rancho Café - A Florista. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Jeremias Gomes </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

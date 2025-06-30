@@ -41,14 +41,15 @@ header {
 
 
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    height: 100px;
+    height:auto;
+    width: 10vw;
 }
 
 nav ul {
@@ -61,13 +62,32 @@ nav ul li a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: var(--secondary-color);
 }
+
+.hamburger {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+
+
+
 
 section {
     min-height: 100vh;
@@ -77,6 +97,8 @@ section {
     align-items: center;
     padding: 120px 5%;
     text-align: center;
+    /* scroll-margin-top: 100px;  */
+
 }
 
 .div-imagem-fundo {
@@ -130,12 +152,7 @@ section {
     cursor: pointer;
 }
 
-video {
 
-    width: 100%;
-    z-index: -100;
-
-}
 
 h2 {
     font-family: var(--font-title);
@@ -148,13 +165,21 @@ h2 {
 #home {
     padding: 0;
     color: var(--light-text-color);
-    background-image: url('bg-image.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     position: relative;
     z-index: 50;
+    
 }
+
+.home-bg {
+  width: 100%;
+  height: 150vh;
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  z-index: -100;
+ 
+}
+
 
 #home .overlay {
     width: 100%;
@@ -179,6 +204,7 @@ h2 {
 
 .home-text {
     position: absolute;
+    margin-bottom: 109px;
 }
 
 .paragrafo-frase {
@@ -193,8 +219,10 @@ h2 {
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 1013px;
     line-height: 1.8;
+    font-size: 24px;
+
 }
 
 .about-content p {
@@ -269,12 +297,12 @@ footer {
     color: var(--light-text-color);
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-        /* Simple responsive solution */
-    }
 
+
+@media (max-width: 768px) {
+
+
+   
     .home-text h1 {
         font-size: 4rem;
     }
@@ -286,4 +314,29 @@ footer {
     h2 {
         font-size: 2.8rem;
     }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        gap: 15px;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+    }
+
+    .nav-links.show {
+  display: flex !important;
 }
+}
+
